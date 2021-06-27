@@ -13,7 +13,8 @@ ol, ul {
     outline: none;
 }
 
-input {
+.form input,
+.submit input {
     -webkit-appearance: none;
     -moz-appearance: none;
     appearance: none;
@@ -311,10 +312,6 @@ a:hover {
 }
 
 /** ---- Submit Button ---- **/ 
-.submit {
-     
-}
-
 .submit__btn {
     margin-top: 22px;
     min-height: 40px;
