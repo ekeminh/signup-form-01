@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="stylesheet" href="./assets/css/responsive.css">
+    <title>Sign Up | Unsplash</title>
+    <!-- Import Google Font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap" rel="stylesheet">
+    <!-- Import FontAwesome Icons  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css" integrity="sha512-iBBXm8fW90+nuLcSKlbmrPcLa0OT92xO1BIsZ+ywDWZCvqsWgccV3gFoRBv0z+8dLJgyAHIhR35VZc2oM/gI1w==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div id="container">
+        <!-- LEFT SIDE-BAR -->
+        <section id="sidebar">
+            <a href="https://unsplash.com/" target="_blank">
+                <img class="sidebar__logo" src="./assets/img/unsplash_icon_light.png" alt="unsplash-pnglogo">
+            </a>
+            <h1 class="sidebar__heading text-light">Creation starts here</h1>
+            <p class="sidebar__description text-light">Over 2 million free high-resolution images brought to you by the world’s most generous community of photographers.</p>
+        </section>
+
+
+        <!-- SIGN-UP CONTENT -->
+        <section id="content">
+            <div id="nav">
+                <p>Already a member? <a href="https://unsplash.com/login" target="_blank">Sign In</a> </p>
+            </div>
+            <!-- Main Content -->
+            <main>
+                <div id="main">
+                    <h2 >Sign up to Unsplash</h2>
+                    
+                    <!--* Connection *-->
+                    <div class="connection">
+                        <div class="google">
+                            <div class="google__logo-box">
+                                <img class="google__logo-icon" src="./assets/img/google_icon.png" alt="google-icon">
+                            </div>
+                            <div class="google__text text-light">
+                                <p>Sign up with Google</p>
+                            </div>
+                        </div>
+                        <div class="facebook">
+                            <i class="fab fa-facebook-f facebook__icon"></i>
+                        </div>
+                    </div>
+
+                    <!--* Divider *-->
+                    <div class="divider text-center">
+                        <span class="divider__text">Or</span>
+                    </div>
+
+                    <!--* Sign-up Form *-->
+                    <div class="form">
+                        <div class="form__name">
+                            <div class="form__fullname col-half s-full-width">
+                                <label for="fullname">Name</label>
+                                <input type="text" class="text-input" id="fullname">
+                            </div>
+                            <div class="form__username col-half s-full-width">
+                                <label for="username">Username</label>
+                                <input type="text" class="text-input" id="username">
+                            </div>
+                        </div>
+                        <div class="form__email">
+                            <label for="email">Email</label>
+                            <input type="email" class="text-input" id="email">
+                        </div>
+                        <div class="form__password">
+                            <label for="password">Password</label>
+                            <input placeholder="6+ characters" type="password" class="text-input" id="password">
+                        </div>
+                    </div>
+
+                    <!--* User Agreement *-->
+                    <div class="agree">
+                        <input class="agree__checkbox" type="checkbox" id="agree">
+                        <label class="agree__text" for="agree">Creating an account means you're okay with our <a href="https://unsplash.com/terms" target="_blank">Terms of Service</a> and <a href="https://unsplash.com/privacy" target="_blank">Privacy Policy</a>.</label>
+                    </div>
+
+                    <!--* Submit Button *-->
+                    <div class="submit">
+                        <input type="submit" class="submit__btn m-full-width" value="Create Account">
+                    </div>
+
+                </div>
+            </main>
+        </section>
+        
+
+    </div>
+</body>
+</html>

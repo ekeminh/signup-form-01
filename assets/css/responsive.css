@@ -1,0 +1,48 @@
+/*?------------------------ PC ------------------------?*/
+@media (min-width: 64em) {
+
+}
+
+/*?----------------- Tablet & Mobile ------------------?*/
+@media (max-width: 63.9375em) {
+    .m-full-width {
+        width: 100%;
+    }
+
+    #sidebar {
+        display: none;
+    }
+
+    #main {
+        padding: 0px 60px;
+    }
+
+    #main::before {
+        content: url('../img/unsplash_icon_black_100px.png');
+        display: block;
+        margin-bottom: 20px;
+    }
+
+}
+
+/*?---------------------- Tablet ----------------------?*/
+@media (min-width: 46.25em)  and (max-width: 63.9375em) {
+
+}
+
+/*?---------------------- Mobile ----------------------?*/
+@media (max-width: 46.1875em) {
+    .s-full-width {
+        width: 100%;
+    }
+
+    #main {
+        padding: 0 30px;
+    }
+
+    .form__name {
+        display: flex;
+        flex-direction: column;
+    }
+}
+

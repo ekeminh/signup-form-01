@@ -1,0 +1,341 @@
+/** Reset CSS **/
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+  
+ol, ul {
+    list-style: none;
+}
+
+:focus-visible {
+    outline: none;
+}
+
+input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+}
+
+::placeholder { /* Chrome, Firefox, Opera, Safari 10.1+ */
+    color: #d2b5a7;
+    opacity: 1; /* Firefox */
+}
+  
+:-ms-input-placeholder { /* Internet Explorer 10-11 */
+    color: #d2b5a7;
+}
+  
+  ::-ms-input-placeholder { /* Microsoft Edge */
+    color: #d2b5a7;
+}
+
+/** Import Google Font **/
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;0,800;1,300;1,400;1,600;1,700;1,800&display=swap');
+
+html {
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* CSS?
+1. Vị trí
+2. Kích thước
+3. Màu sắc
+4. Kiểu dáng
+*/
+
+/** COMMON **/
+:root {
+    --dark-color: #0d0c22;
+    --light-color: #f8f9fa;
+    --background-color: #f0fbfd;
+    --gray-dark-color: #6e6d7a;
+    --gray-light-color: #f2f2f2;
+    --gray-hover-color: #e5e5e5;
+    --button-color: #ea4c89;
+    --button-hover-color: #f082ac;
+    --href-color: #4f3cc9;
+    --alt-color: #3ac3c5;
+}
+
+html, body {
+    height: 100%;
+}
+
+label {
+    display: block;
+    margin-top: 14px;
+    margin-bottom: 4px;
+}
+
+a {
+    text-decoration: none;
+    color: var(--href-color);
+}
+
+a:hover {
+    opacity: 0.8;
+}
+
+.text-light {
+    color: #f8f9fa !important;
+}
+
+.text-center {
+    text-align: center !important;
+}
+
+.text-input {
+    font-size: 14px;
+    display: block;
+    width: 100%;
+    background-color: var(--gray-light-color);
+    padding: 10px 16px;
+    border: 1px solid transparent;
+    border-radius: 8px;
+    transition: all 0.2s ease;
+}
+
+.text-input:hover {
+    background-color: #fff;
+    border-color: rgba(0,0,0,0.1);
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.text-input:active {
+    background-color: #fff;
+    border-color: #e7e7e9;
+    box-shadow: none;
+}
+
+.text-input:focus {
+    background-color: #fff;
+    border-color: rgba(234,76,137,0.4);
+    box-shadow: 0 0 0 4px rgb(234 76 137 / 10%);
+}
+
+.col-half {
+    width: 48%;
+}
+
+/*? ------------ Main Container ------------ */
+#container {
+    display: flex;
+    height: 100%;
+}
+
+/*? ------------ LEFT SIDE-BAR ------------ */
+#sidebar {
+    background-image: url(../img/jet-dela-cruz-oqrynkqKmWg-unsplash.jpg);
+    background-color:#345345; /* fallback color when the background is unavailable */
+    background-size: cover;
+    background-position: center;
+    flex: 1;
+    padding: 40px;
+}
+
+.sidebar__logo {
+    opacity: 1;
+    width: 50px;
+    padding: 0 0 30px 0;
+    transition: all 0.1s ease;
+}
+
+.sidebar__logo:hover {
+    opacity: 0.9;
+}
+
+.sidebar__heading {
+    font-size: 36px;
+    margin-bottom: 16px;
+}
+
+.sidebar__description {
+    font-size: 18px;
+    /* text-shadow: 2px 2px 3px #ccc; */
+}
+
+
+/*? ------------ SIGN-UP CONTENT ------------ */
+
+#content {
+    background-color: #fff;
+    flex: 2;
+}
+
+#nav {
+    font-size: 14px;
+    padding: 30px 30px 0 30px;
+    text-align: right;
+}
+
+#main {
+    padding: 30px 60px 0 60px;
+    margin: auto; /* center align */
+    width: 100%; /* responsive */
+    max-width: 536px; /* responsive */
+}
+
+
+#main h2 {
+    margin-bottom: 26px;
+
+}
+
+/** ---- Connection ---- **/ 
+.connection {
+    display: flex;
+    margin: 0 0 40px;
+}
+
+.google {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    max-width: 280px;
+    background-color: #1a73e8;
+    padding: 3px;
+    border-radius: 3px;
+    transition: all 0.1s ease;
+}
+
+.google:hover {
+    background-color: #5194ee;
+    cursor: pointer;
+}
+
+.google:active {
+    background-color: #1a73e8;
+    cursor: pointer;
+}
+
+.google__logo-box {
+    background-color: var(--light-color);
+    width: 32px;
+    height: 32px;
+    border-radius: 3px 0 0 3px;
+}
+
+.google__logo-icon {
+    width: 32px;
+    height: 32px;
+    padding: 8px;
+}
+
+.google__text {
+    font-size: 14px;
+    margin: 0 auto;
+}
+
+.facebook {
+    margin-left: 16px;
+    background-color: var(--gray-light-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-width: 38px;
+    height: 38px;
+    border-radius: 4px;
+    transition: all 0.1s ease;
+}
+
+.facebook:hover {
+    background-color: var(--gray-hover-color);
+    cursor: pointer;
+}
+
+.facebook:active {
+    background-color: #d9d9d9;
+    cursor: pointer;
+}
+
+.facebook__icon {
+    color: var(--gray-dark-color);
+}
+
+/** ---- Divider ---- **/ 
+.divider {
+    border-top: 1px solid var(--gray-hover-color);
+}
+
+.divider__text {
+    display: inline-block;
+    position: relative;
+    top: -15px;
+    background-color: #fff;
+    padding: 4px 16px;
+    font-size: 15px;
+    color: var(--gray-dark-color);
+}
+
+/** ---- Sign-up Form ---- **/ 
+.form {
+    display: flex;
+    flex-flow: column nowrap;
+}
+
+.form__name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.form label {
+    font-size: 15px;
+    font-weight: 700;
+    line-height: 1.5;
+}
+
+/** ---- User Agreement ---- **/ 
+.agree {
+    margin-top: 18px;
+}
+
+.agree__checkbox {
+    width: 16px;
+    height: 16px;
+    display: inline;
+    vertical-align: top;
+    cursor: pointer;
+}
+
+.agree__text {
+    font-size: 14px;
+    color: #9d6d7a;
+    display: inline-block;
+    width: calc(100% - 24px);
+    margin: 0;
+    padding-left: 8px;
+    cursor: pointer;
+}
+
+/** ---- Submit Button ---- **/ 
+.submit {
+     
+}
+
+.submit__btn {
+    margin-top: 22px;
+    min-height: 40px;
+    width: 200px;
+    display: inline-block;
+    padding: 10px 36px;
+    background-color: var(--button-color);
+    color: var(--light-color);
+    font-size: 14px;
+    font-weight: 600;
+    border: 0px solid transparent;
+    border-radius: 8px;
+    transition: all 0.1s ease;
+}
+
+.submit__btn:hover {
+    background-color: var(--button-hover-color);
+    cursor: pointer;
+}
+
+.submit__btn:active {
+    background-color: var(--button-color);
+    cursor: pointer;
+}
