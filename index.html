@@ -57,37 +57,40 @@
                     </div>
 
                     <!--* Sign-up Form *-->
-                    <div class="form">
-                        <div class="form__name">
-                            <div class="form__fullname col-half s-full-width">
-                                <label for="fullname">Name</label>
-                                <input type="text" class="text-input" id="fullname">
+                    <form action="">
+                        <!--* Text Input *-->
+                        <div class="form">
+                            <div class="form__name">
+                                <div class="form__fullname col-half s-full-width">
+                                    <label for="fullname">Name</label>
+                                    <input type="text" name="" required class="text-input" id="fullname">
+                                </div>
+                                <div class="form__username col-half s-full-width">
+                                    <label for="username">Username</label>
+                                    <input type="text" name="" required class="text-input" id="username">
+                                </div>
                             </div>
-                            <div class="form__username col-half s-full-width">
-                                <label for="username">Username</label>
-                                <input type="text" class="text-input" id="username">
+                            <div class="form__email">
+                                <label for="email">Email</label>
+                                <input type="email" name="" required class="text-input" id="email">
+                            </div>
+                            <div class="form__password">
+                                <label for="password">Password</label>
+                                <input placeholder="6+ characters" type="password" name="" required class="text-input" id="password">
                             </div>
                         </div>
-                        <div class="form__email">
-                            <label for="email">Email</label>
-                            <input type="email" class="text-input" id="email">
-                        </div>
-                        <div class="form__password">
-                            <label for="password">Password</label>
-                            <input placeholder="6+ characters" type="password" class="text-input" id="password">
-                        </div>
-                    </div>
 
-                    <!--* User Agreement *-->
-                    <div class="agree">
-                        <input class="agree__checkbox" type="checkbox" id="agree">
-                        <label class="agree__text" for="agree">Creating an account means you're okay with our <a href="https://unsplash.com/terms" target="_blank">Terms of Service</a> and <a href="https://unsplash.com/privacy" target="_blank">Privacy Policy</a>.</label>
-                    </div>
+                        <!--* User Agreement *-->
+                        <div class="agree">
+                            <input class="agree__checkbox" type="checkbox" id="agree">
+                            <label class="agree__text" for="agree">Creating an account means you're okay with our <a href="https://unsplash.com/terms" target="_blank">Terms of Service</a> and <a href="https://unsplash.com/privacy" target="_blank">Privacy Policy</a>.</label>
+                        </div>
 
-                    <!--* Submit Button *-->
-                    <div class="submit">
-                        <input type="submit" class="submit__btn m-full-width" value="Create Account">
-                    </div>
+                        <!--* Submit Button *-->
+                        <div class="submit">
+                            <input type="submit" class="submit__btn m-full-width" value="Create Account">
+                        </div>
+                    </form>
                 </div>
             </main>
         </section>   
